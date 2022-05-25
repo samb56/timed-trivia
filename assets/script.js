@@ -31,10 +31,15 @@ startButton.addEventListener("click", function () {
 })
 
 
-// create rotating questions with clickable answers
+// starts the first question
 startButton.addEventListener("click", function () {
-  quiz.setAttribute("display: default")
+  quiz.style.display = "block";
+  answer2.addEventListener("click", function () {
+    remainingTime = --remainingTime
+  })
+
 })
+
 
 
 
