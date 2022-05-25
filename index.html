@@ -5,64 +5,151 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <title>Timed Trivia</title>
 </head>
 <body>
-  <h1>Timed Trivia </h1>
+  <h1 class="jumbotron jumbotron-fluid" id = "custom-jumbotron">Welcome to the Timed Trivia Game</h1>
+
   <h2><button class="startButton">Start!</button></h2>
   
   <div class="gameArea">
-    <div class="textInput">
-      sample text input
-      <input type="text" id="playerInput" required minlength="4" maxlength="10">
-  
-  
-  
-  
-  
-  
-    </div>
-  
-  
-  
-  
   
     <div class="scoreTimer">
   
-      <div ID="score">
-        Wins: 0
-  
-        Loses: 0
-  
-  
-  
-      </div>
+      <div id="score"> </div>
       <div id="timer">
-  
         seconds remaining : <div id="secondsRemaining"> </div>
-  
-  
-  
-  
       </div>
-  
-  
-  
-  
-  
-  
-  
     </div>
   
-  
-  
-  
-  
-  
-  
-  
   </div>
-  <script src="./assets/script.js"></script>
   
+  
+  
+  
+  
+  
+  <div id="quiz">
+    <div class="questionBox">
+      <h2 id="questionNumber">Question 1:</h2>
+      <h3 id="questionText">True or False: javascript does not require semicolons at the end of lines of code</h3>
+      <div class="answerBox">
+    
+        
+        <button id="answer1">True</button>
+        <button id="answer2">false</button>
+        <button id="answer3"></button>
+        <button id="answer4"></button>
+    
+      </div>
+    
+    
+    
+    
+    </div>
+
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!--   
+
+<script src="./assets/script.js"></script>
 </body>
+<div class="questionBox">
+  <h2 id="questionNumber">Question 2:</h2>
+  <h3 id="questionText">how many values does a boolean data type have? </h3>
+  <div class="answerBox">
+
+    <div id="answer1">14</div>
+    <div id="answer2">1</div>
+    <div id="answer3">2</div>
+    <div id="answer4">4</div>
+
+  </div>
+
+  <div class="questionBox">
+    <h2 id="questionNumber">Question 3:</h2>
+    <h3 id="questionText"> data put in local storage must first be converted to what type of data? </h3>
+    <div class="answerBox">
+  
+      <div id="answer1"> integers </div>
+      <div id="answer2"> string </div>
+      <div id="answer3"> boolean </div>
+      <div id="answer4"> array </div>
+  
+    </div>
+  <div class="questionBox">
+    <h2 id="questionNumber">Question 4:</h2>
+    <h3 id="questionText"> the math.random() function returns a number between what range of numbers? </h3>
+    <div class="answerBox">
+  
+      <div id="answer1"> integers between 1 and 99 </div>
+      <div id="answer2"> integers between 1 and 1,0000,000 </div>
+      <div id="answer3"> any given number of the infinite choices between 1 and 10 </div>
+      <div id="answer4"> a number between 0 and 1  </div>
+  
+    </div>
+  <div class="questionBox">
+    <h2 id="questionNumber">Question 5:</h2>
+    <h3 id="questionText"> variables defined with "let" can be redeclared: </h3>
+    <div class="answerBox">
+  
+      <div id="answer1"> true </div>
+      <div id="answer2"> false </div>
+    </div>
+      
+  <div class="questionBox">
+    <h2 id="questionNumber">Question 6:</h2>
+    <h3 id="questionText"> what does the logical operator "||" denote? </h3>
+    <div class="answerBox">
+  
+      <div id="answer1"> and </div>
+      <div id="answer2"> or </div>
+      <div id="answer3"> maybe </div>
+      <div id="answer4"> or else </div>
+  
+    </div>
+  <div class="questionBox">
+    <h2 id="questionNumber">Question 7:</h2>
+    <h3 id="questionText"> which description matches the operator "! ="? </h3>
+    <div class="answerBox">
+  
+      <div id="answer1"> values are inverses </div>
+      <div id="answer2"> values are equal every other day </div>
+      <div id="answer3"> loudly saying is equals to </div>
+      <div id="answer4"> not equal to </div>
+  
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
 </html>

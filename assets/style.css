@@ -1,3 +1,9 @@
+:root{
+    --green: lightgreen;
+    --white-yellow: rgb(252, 243, 227);
+    --White: white;
+ }
+
 body {
   background-color: lightgreen;
   font-family: monospace;
@@ -6,6 +12,7 @@ body {
 h1 {
   text-align: center;
   color: white;
+  
   margin: 20px;
   padding: 25px;
 }
@@ -17,10 +24,15 @@ h2 {
 
 
 }
+#custom-jumbotron{
+  background-color: lightgreen;
+  margin: 0%;
+}
+
 
 .startButton {
-  height: 7em;
-  width: 12em;
+  height: 10%;
+  width: 20%;
   background-color: beige;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -34,11 +46,49 @@ h2 {
 .gameArea {
   display: flex;
   justify-content: space-around;
+  
 }
 
 .scoreTimer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+}
+
+.questionBox {
+  height: fit-content;
+    width: fit-content;
+    background-color: beige;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: solid 1px;
+}
+.answerBox {
+  
+
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 25px
+  ;
+}
+
+.answer {
+  align-items: center;
+  text-align: center;
+  text-justify:auto
+  height: 30px;
+  width: 75px;
+  background-color: rgb(156, 246, 152);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  list-style-type: none;
 
 }
