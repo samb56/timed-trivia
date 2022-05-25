@@ -1,5 +1,5 @@
 
-var quiz = document.getElementById("#quiz")
+var quiz = document.querySelector(".quiz")
 var questionNumber = document.getElementById("#questionNumber")
 var questionText = document.getElementById("#questionText")
 var answer1 = document.getElementById("#answer1")
@@ -26,18 +26,16 @@ function countdown() {
 
 //start button
 startButton.addEventListener("click", function () {
-  countdown();
+  countdown()
 
 })
 
 
 // create rotating questions with clickable answers
+startButton.addEventListener("click", function () {
+  quiz.setAttribute("display: default")
+})
 
-let currentQuestion = 0
-
-function runQuestion() {
-  quiz.setAttribute("style= "" ")
-}
 
 
 // create high score tracker
